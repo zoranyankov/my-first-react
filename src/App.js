@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import BookList from './components/BookList';
+import Input from './components/Input';
 
 const Books = [
   {
@@ -22,6 +23,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <Input></Input>
         <BookList allBooks={Books} />
         <a
           className="App-link"
