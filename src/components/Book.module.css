@@ -1,0 +1,9 @@
+.book {
+    background-color: lightblue;
+    color: black;
+    border-radius: 3em;
+}
+
+.price {
+    color: red;
+}
