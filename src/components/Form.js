@@ -12,23 +12,22 @@ class Form extends Component {
         return (
             <form onSubmit={(e) => {
                 e.preventDefault();
+
                 const formData = new FormData(e.target);
-                console.log(formData.get('email'));
+                // console.log(formData.values());
+                // Object.keys(formData).forEach(x => console.log(x));
+                const {title, first_name, last_name, email, phone, password} = formData.values();
+                console.log(title);
+                // console.log(formData.get('email'));
             }}>
                 <p>
                     <label>Title</label><br />
-                    <label>
-                        <input type="radio" name="title" value="mr" />
-      Mr
-      </label>
-                    <label>
-                        <input type="radio" name="title" value="mrs" />
-                    Mrs
-    </label>
-                    <label>
-                        <input type="radio" name="title" value="miss" />
-    Miss
-    </label>
+                    <input type="radio" name="title" value="mr" />
+                    <label>Mr</label>
+                    <input type="radio" name="title" value="mrs" />
+                    <label>Mrs</label>
+                    <input type="radio" name="title" value="miss" />
+                    <label>Miss</label>
                 </p>
                 <p>
                     <label>First name</label><br />

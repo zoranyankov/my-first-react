@@ -1,0 +1,35 @@
+.navbar {
+    display: inline-block;
+    width: 100%;
+    background-color: skyblue;
+    color: red;
+}
+
+.App-logo {
+    height: 10vmin;
+    pointer-events: none;
+    color: blue;
+}
+
+.navbar-nav {
+    display: inline;
+    float: right;
+}
+
+.nav-item {
+    display: inline;
+    position: relative;
+    margin-left: 0em;
+    padding: 1rem;
+}
+
+.navbar-brand {
+    display: inline;
+    text-decoration: none;
+    float: left;
+    padding: 1rem;
+}
+
+.nav-link {
+    text-decoration: none;
+}

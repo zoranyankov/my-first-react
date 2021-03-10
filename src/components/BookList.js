@@ -16,7 +16,7 @@ class BookList extends Component {
                 <Button></Button>
                 <h1 className={styles.title2}>MY LIST OF BOOKS</h1>
                 <ul className="books">
-                    {this.props.allBooks.map((b, i) => <Book key={i} id={i} book={b} />)}
+                    {this.props.allBooks.map(b => <Book key={b.title.concat(b.description)} book={b} />)}
                 </ul>
             </div>
         );

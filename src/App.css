@@ -1,10 +1,15 @@
 .App {
+    /* background-image: url("https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX30045320.jpg"); */
+    background-image: url("https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX30045320.jpg");
     text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .App-logo {
     height: 10vmin;
     pointer-events: none;
+    color: blue;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,7 +19,7 @@
 }
 
 .App-header {
-    background-color: #282c34;
+    /* background-color: #282c34; */
     min-height: 100vh;
     display: flex;
     flex-direction: column;

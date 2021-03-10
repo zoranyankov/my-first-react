@@ -1,5 +1,6 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
 import BookList from './components/BookList';
 import Input from './components/Input';
 import Form from './components/Form';
@@ -22,10 +23,11 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Form></Form>
-        <Input></Input>
+      <Header />
+      {/* <header className="App-header"></header> */}
+        {/* <img src={logo} className="App-logo" alt="logo" /> */}
+        {/* <Form></Form> */}
+        {/* <Input></Input> */}
         <BookList allBooks={Books} />
         <a
           className="App-link"
@@ -35,7 +37,6 @@ function App() {
         >
           Learn React
         </a>
-      </header>
     </div>
   );
 }

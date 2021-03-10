@@ -1,7 +1,10 @@
 .book {
-    background-color: lightblue;
+    background-image: url('http://assets.stickpng.com/images/580b585b2edbce24c47b263f.png');
     color: black;
+    background-color: skyblue;
     border-radius: 3em;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .price {
