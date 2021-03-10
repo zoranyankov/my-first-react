@@ -1,9 +1,13 @@
+body {
+    background-image: url("https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX30045320.jpg");
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+
 .App {
     /* background-image: url("https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX30045320.jpg"); */
-    background-image: url("https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX30045320.jpg");
+    /* background-image: url("https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX30045320.jpg"); */
     text-align: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .App-logo {

@@ -1,0 +1,19 @@
+.containter {
+    display: inline-block;
+    text-align: center;
+}
+
+.form-container {
+    /* position: relative; */
+    /* text-align: center; */
+    width: 300px;
+}
+
+.form-control {
+    width: 300px;
+}
+
+.form-group {
+    /* position: relative; */
+    margin-left: 100%;
+}

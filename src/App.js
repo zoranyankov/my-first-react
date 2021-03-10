@@ -1,9 +1,19 @@
 // import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
+import Login from './components/auth/Login';
+import Register from './components/auth/Register';
 import BookList from './components/BookList';
-import Input from './components/Input';
-import Form from './components/Form';
+// import Input from './components/Input';
+// import Form from './components/Form';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  // Link,
+  // useRouteMatch,
+  // useParams
+} from "react-router-dom";
 
 const Books = [
   {
@@ -22,13 +32,41 @@ function App() {
 
 
   return (
-    <div className="App">
-      <Header />
-      {/* <header className="App-header"></header> */}
+    <Router>
+      <div className="App">
+        {/* <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="/users">Users</Link>
+            </li>
+          </ul>
+        </nav> */}
+
+        <Header />
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/auth/register">
+            <Register />
+          </Route>
+          <Route path="/auth/login">
+            <Login />
+          </Route>
+          <Route path="/auth/logout">
+            <Logout />
+          </Route>
+        </Switch>
+        {/* <header className="App-header"></header> */}
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
         {/* <Form></Form> */}
         {/* <Input></Input> */}
-        <BookList allBooks={Books} />
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -37,8 +75,31 @@ function App() {
         >
           Learn React
         </a>
+      </div>
+    </Router>
+  );
+}
+
+function Home() {
+  return (
+    <div className="home-container">
+      <h2>Home</h2>
+      <BookList allBooks={Books} />
     </div>
   );
 }
+
+// function Register() {
+//   return <h2>Register</h2>;
+// }
+
+// function Login() {
+//   return <h2>Login</h2>;
+// }
+
+function Logout() {
+  return <h2>Logout</h2>;
+}
+
 
 export default App;
