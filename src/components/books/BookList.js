@@ -2,16 +2,16 @@
 import { Component } from 'react';
 import Book from './Book';
 import Button from './Button';
-import styles from './Booklist.module.css';
+import styles from './books/Booklist.module.css';
 
-class BookList extends Component {
+class Booklist extends Component {
     constructor(props) {
         super(props);
     }
 
     render() {
         return (
-            <div className="bookList">
+            <div className="Booklist">
                 <h1 className={styles.title1}>TOTAL COUNT OF BOOKS</h1>
                 <Button></Button>
                 <h1 className={styles.title2}>MY LIST OF BOOKS</h1>
@@ -23,4 +23,4 @@ class BookList extends Component {
     }
 }
 
-export default BookList;
+export default Booklist;

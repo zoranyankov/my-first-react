@@ -2,7 +2,7 @@
 import './App.css';
 import Header from './components/Header';
 import Auth from './components/auth/Auth';
-import BookList from './components/BookList';
+import Booklist from './components/books/Booklist';
 // import Input from './components/Input';
 // import Form from './components/Form';
 import {
@@ -86,7 +86,7 @@ function Home() {
   return (
     <div className="home-container">
       <h2>Home</h2>
-      <BookList allBooks={Books} />
+      <Booklist allBooks={Books} />
     </div>
   );
 }
