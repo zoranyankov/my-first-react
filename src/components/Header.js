@@ -9,10 +9,10 @@ const Header = (props) => {
 
     return (
         <div>
-                <img src={logo} className="App-logo" alt="logo" />
+            <img src={logo} className="App-logo" alt="logo" />
             <nav className={style.navbar}>
-                        <Link to="/" className={style['navbar-brand']}> Welcome, {'email'} </Link>
-                {/* <a className={style['navbar-brand']} href="home">Movies</a> */}
+                <Link to="/" className={style['navbar-brand']}>Books</Link>
+                {/* <a className={style['navbar-brand']} href="home">Books</a> */}
 
 
                 <ul className={style['navbar-nav']}>

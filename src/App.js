@@ -1,8 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
-import Login from './components/auth/Login';
-import Register from './components/auth/Register';
+import Auth from './components/auth/Auth';
 import BookList from './components/BookList';
 // import Input from './components/Input';
 // import Form from './components/Form';
@@ -10,6 +9,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
+  Redirect,
   // Link,
   // useRouteMatch,
   // useParams
@@ -53,15 +53,17 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/auth/register">
-            <Register />
+          {/* <Route path="/auth/register"> */}
+          <Route path="/auth">
+            <Auth />
+            {/* <Register /> */}
           </Route>
-          <Route path="/auth/login">
+          {/* <Route path="/auth/login">
             <Login />
           </Route>
           <Route path="/auth/logout">
             <Logout />
-          </Route>
+          </Route> */}
         </Switch>
         {/* <header className="App-header"></header> */}
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
