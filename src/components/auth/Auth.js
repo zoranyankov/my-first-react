@@ -3,7 +3,7 @@ import Register from './Register';
 import {
     Switch,
     Route,
-    Redirect,
+    // Redirect,
     useRouteMatch,
     // useParams
   } from "react-router-dom";

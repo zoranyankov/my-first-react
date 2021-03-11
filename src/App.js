@@ -1,15 +1,16 @@
 // import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
+import Profile from './components/Profile';
 import Auth from './components/auth/Auth';
-import Booklist from './components/books/Booklist';
+import Booklist from './components/books/BookList';
 // import Input from './components/Input';
 // import Form from './components/Form';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Redirect,
+  // Redirect,
   // Link,
   // useRouteMatch,
   // useParams
@@ -52,6 +53,9 @@ function App() {
         <Switch>
           <Route exact path="/">
             <Home />
+          </Route>
+          <Route exact path="/profile">
+            <Profile />
           </Route>
           {/* <Route path="/auth/register"> */}
           <Route path="/auth">
@@ -99,9 +103,9 @@ function Home() {
 //   return <h2>Login</h2>;
 // }
 
-function Logout() {
-  return <h2>Logout</h2>;
-}
+// function Logout() {
+//   return <h2>Logout</h2>;
+// }
 
 
 export default App;

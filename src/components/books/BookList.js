@@ -1,8 +1,8 @@
 /* eslint-disable no-useless-constructor */
 import { Component } from 'react';
 import Book from './Book';
-import Button from './Button';
-import styles from './books/Booklist.module.css';
+import Button from '../Button';
+import styles from './Booklist.module.css';
 
 class Booklist extends Component {
     constructor(props) {

@@ -5,7 +5,7 @@ import {
 } from "react-router-dom";
 
 const Header = (props) => {
-    let match
+    // let match
 
     return (
         <div>
@@ -18,7 +18,7 @@ const Header = (props) => {
                 <ul className={style['navbar-nav']}>
                     {/* {{#if isLogged}} */}
                     <li className={style['nav-item']}>
-                        <Link to="/" > Welcome, {'email'} </Link>
+                        <Link to="/profile" > Welcome, {'email'} </Link>
                         {/* <a className={style['nav-link']} id="welcome-item" href="home"></a> */}
                     </li>
                     <li className={style['nav-item']}>
